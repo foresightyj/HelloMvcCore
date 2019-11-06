@@ -1,0 +1,14 @@
+﻿@using HelloMvcCore2.Repositories
+@model List<Post>
+@{
+    ViewData["Title"] = "Posts";
+    ViewBag.Hello = "Oh my";
+}
+
+<ul>
+@foreach(var post in Model)
+{
+    <li> @post.Title </li>
+}
+</ul>
+
